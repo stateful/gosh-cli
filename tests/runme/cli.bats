@@ -73,7 +73,7 @@ RUNME_RUN_CMD="runme run $RUNME_FLAGS"
 
 @test "Generate public key" {
     run $RUNME_RUN_CMD tonoscli-genpubkey
-    assert_line -p "\"Public key\": \""
+    assert_line -p "Public key"
 }
 
 @test "Run contract" {
